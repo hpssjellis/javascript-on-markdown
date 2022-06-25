@@ -4,7 +4,7 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.1.0-8
+##### version 0.1.0-9
 
 Demo of this Github Markdown can be viewed at this Github Pages site
 
@@ -38,7 +38,7 @@ more markdown this time of an image
 <br>
 Try the image with html
 
-<img src="https://user-images.githubusercontent.com/5605614/175780835-2b0d64a4-0ba8-4c90-9f05-fb4e89cd6980.png" width=300 />
+<img src="https://user-images.githubusercontent.com/5605614/175780835-2b0d64a4-0ba8-4c90-9f05-fb4e89cd6980.png" width=700 />
 
 
 ### 4
