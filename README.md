@@ -4,7 +4,7 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.1.1-12
+##### version 0.1.1-14
 
 Demo of this Github Markdown can be viewed at this GitPages site
 
@@ -31,10 +31,10 @@ https://github.com/hpssjellis](https://github.com/hpssjellis)
 ### 2
 
 
-<input type="button" value="Go to 5 test multi line" onclick="{;
+<input type="button" value="Go to 5 test multi line 14" onclick="{;
   alert('wow'); 
   window.location.href='#5'; 
-  // window.location.href = 'http://example.com/new_url';
+
   alert(); 
 }">
 
