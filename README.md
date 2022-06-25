@@ -4,7 +4,7 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.0.2-4 
+##### version 0.1.0-5
 
 Demo of this page needs to be viewed at 
 
@@ -22,8 +22,8 @@ https://github.com/hpssjellis](https://github.com/hpssjellis)
 
 <input type="button" value="test" onclick="{
    alert('wow'); 
-  location.href='#5'
-  //window.location.href = 'http://example.com/new_url';
+   location.href='#5'
+   //window.location.href = 'http://example.com/new_url';
 }">
 
 
@@ -85,7 +85,10 @@ Try the image with html
 ### 5
 
 
-
+<input type="button" value="go to 2" onclick="{
+   alert('wow'); 
+   location.href='#2'
+}">
 
 .
 
