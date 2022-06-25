@@ -19,7 +19,10 @@ https://github.com/hpssjellis](https://github.com/hpssjellis)
 ### 2
 
 
-<input type="button" value="test" onclick="{alert('wow');}">
+<input type="button" value="test" onclick="{
+   alert('wow'); 
+  location.href='#5'
+}">
 
 
 
