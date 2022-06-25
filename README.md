@@ -1,9 +1,10 @@
-##### version 0.0.2-4  
+ 
 
 
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
+##### version 0.0.2-4 
 
 Demo of this page needs to be viewed at 
 
@@ -22,6 +23,7 @@ https://github.com/hpssjellis](https://github.com/hpssjellis)
 <input type="button" value="test" onclick="{
    alert('wow'); 
   location.href='#5'
+  //window.location.href = 'http://example.com/new_url';
 }">
 
 
