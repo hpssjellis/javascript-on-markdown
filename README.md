@@ -6,7 +6,7 @@ testing if I can do some javascript with markdown on github
 
 ##### version 0.1.1-10
 
-Demo of this Github Markdown can be viewed at this Github Pages site
+Demo of this Github Markdown can be viewed at this GitPages site
 
 [https://hpssjellis.github.io/javascript-on-markdown/](https://hpssjellis.github.io/javascript-on-markdown/)
 
@@ -14,6 +14,12 @@ Demo of this Github Markdown can be viewed at this Github Pages site
 This Github Repository
 
 [https://github.com/hpssjellis/javascript-on-markdown](https://github.com/hpssjellis/javascript-on-markdown)
+
+
+
+# Note when looking at the markdown non of the javascript buttons appear, you must go to the gitPages demo link!
+
+
 
 
 just some markdown
