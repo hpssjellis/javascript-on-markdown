@@ -1,4 +1,4 @@
-##### version 0.0.1-1  
+##### version 0.0.2-2  
 
 
 # javascript-on-markdown
@@ -19,3 +19,13 @@ https://github.com/hpssjellis
 
 
 <input type="button" value="test" onclick="{alert('wow');}">
+
+
+
+
+
+more markdown this time of an image
+
+![image](https://user-images.githubusercontent.com/5605614/175780835-2b0d64a4-0ba8-4c90-9f05-fb4e89cd6980.png)
+
+
