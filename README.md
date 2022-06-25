@@ -1,3 +1,6 @@
+##### version 0.0.1-1  
+
+
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
