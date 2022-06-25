@@ -92,7 +92,7 @@ Try the image with html
 
 <input type="button" value="go to 2" onclick="{
    //alert('wow'); 
-   location.href='#2'
+   window.location.href='#2';
 }">
 
 .
@@ -127,6 +127,8 @@ Try the image with html
 .
 
 ###  6
+
+<input type="button" value="go to 4" onclick="{ window.location.href='#4';   }">
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
