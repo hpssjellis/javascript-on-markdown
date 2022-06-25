@@ -4,11 +4,16 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.1.0-6
+##### version 0.1.0-7
 
 Demo of this Github Markdown can be viewed at this Github Pages site
 
 [https://hpssjellis.github.io/javascript-on-markdown/](https://hpssjellis.github.io/javascript-on-markdown/)
+
+
+This Github Repository
+
+[https://github.com/hpssjellis/javascript-on-markdown](https://github.com/hpssjellis/javascript-on-markdown)
 
 
 just some markdown
