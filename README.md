@@ -2,7 +2,7 @@
 
 
 
-##### version 0.6.2-80
+##### version 0.6.3-81
 
 Demo of this Github Markdown can be viewed at this GitPages site [https://hpssjellis.github.io/javascript-on-markdown/](https://hpssjellis.github.io/javascript-on-markdown/)
 
@@ -12,7 +12,7 @@ This Github Repository [https://github.com/hpssjellis/javascript-on-markdown](ht
 
 Number of Links: <input type="text" id="myCountLinks" size="7" value="7" >, Seconds per link: <input type="text" id="myCountMax" size="7" value="4" >
 
-<div id="myNumSlides" style=" position:sticky; top:0px; left:20px; height:20px; "> ...</div>  <br>
+<div id="myNumSlides" style=" position:sticky; top:0px; left:20px; height:25px; "> ...</div>  <br>
 
   
 
@@ -24,7 +24,7 @@ Number of Links: <input type="text" id="myCountLinks" size="7" value="7" >, Seco
 
 
 
-<div id="myStick"  style=" position:sticky; top:25px; display:inline; ">
+<div id="myStick"  style=" position:sticky; top:30px; display:inline; ">
  
  <input type=button value="Start-No-Sound" onclick="{
    document.getElementById('myStick').style.display = 'none';                                                 
@@ -51,7 +51,7 @@ Number of Links: <input type="text" id="myCountLinks" size="7" value="7" >, Seco
    carousel();                                                
 }">  
  
-  <input type=button value="Stop" onclick="{
+  <input type=button value="Rewind" onclick="{
    myIndex = 0;  
    clearInterval(myLooper);
    clearInterval(myCounting);
@@ -291,12 +291,12 @@ function myCountDown(){
     myCountUp = myMainNum;                              
   }
   if (myIndex >= xSlide && myMainNum == myCountUp){ 
-     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ALL DONE <input type=button value="Show"  style="height:20px; " onclick="{document.getElementById('myStick').style.display = 'inline'; }"> `;
+     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ALL DONE <input type=button value="Show"  style="height:25px; " onclick="{document.getElementById('myStick').style.display = 'inline'; }"> `;
      clearInterval(myCounting);             
      clearInterval(myLooper);  
   }
   else {    
-     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ${myMainNum-myCountUp} seconds remaining <input type=button value="Show" style="height:20px; " onclick="{document.getElementById('myStick').style.display = 'inline'; }"> `;
+     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ${myMainNum-myCountUp} seconds remaining <input type=button value="Show" style="height:25px; " onclick="{document.getElementById('myStick').style.display = 'inline'; }"> `;
   }
 }
 ;
