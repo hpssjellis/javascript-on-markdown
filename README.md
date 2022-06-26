@@ -4,7 +4,7 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.2.2-30
+##### version 0.2.2-31
 
 Demo of this Github Markdown can be viewed at this GitPages site
 
@@ -38,11 +38,11 @@ function carousel() {
   var i;
 ;
   for (i = 0; i < xSlide.length; i++) {
-    xSlide[i].style.display = 'none';  
+   // xSlide[i].style.display = 'none';  
   }
   myIndex++;
   if (myIndex > xSlide.length) {myIndex = xSlide.length};    
-  xSlide[myIndex-1].style.display = 'block';
+ // xSlide[myIndex-1].style.display = 'block';
   window.location.href='#'+myIndex;
   myCountDown();
   myCounting = setInterval(myCountDown, 1000);
