@@ -4,7 +4,7 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.3.3-41
+##### version 0.3.4-42
 
 Demo of this Github Markdown can be viewed at this GitPages site
 
@@ -32,16 +32,46 @@ Seconds per link: <input type="text" id="myCountMax" size="7" value="4" >
 
 # Note when looking at the markdown none of the javascript buttons appear, you must go to the gitPages demo link!
 
+
+
+
 <div id="myStick"  style=" position:sticky; top:20px;  ">
  
- <input type=button value="Start-No-Sound" style=" position:sticky; top:0px;  " onclick="{
+ <input type=button value="Start-No-Sound" onclick="{
    xSlide  = document.getElementById('myCountLinks').value; 
    myMainNum = document.getElementById('myCountMax').value;                                               
    myIndex = 0;  
    clearInterval(myLooper);  
    carousel();  
 }">
-
+ 
+<input type=button value="Start-Pre-Recorded" onclick="{
+   let myAudio01 = new Audio('recorded-talk.m4a');
+   myAudio01.play(); 
+   myIndex = 0;  
+   clearInterval(myLooper);  
+   carousel();                                                
+}">  
+ 
+  <input type=button value="Reset" onclick="{
+   myIndex = 0;  
+   clearInterval(myLooper);  
+}">   
+ 
+ <input id="myPause" type=button value="Pause" onclick="{                                                
+   clearInterval(myLooper);  
+}">       
+  
+  
+<input type=button value="Back" onclick="{
+   myIndex = myIndex - 2;    
+   if (myIndex <= 0){myIndex=0};                                      
+   myNext();
+}">   
+  
+<input type=button value="Next" onclick="{
+   myNext();
+}"> 
  
  </div>
 
@@ -212,12 +242,8 @@ function carousel() {
   myCountUp = -1;
   var i;
 ;
-  for (i = 0; i < xSlide; i++) {
-   // xSlide[i].style.display = 'none';  
-  }
   myIndex++;
   if (myIndex > xSlide) {myIndex = xSlide};    
- // xSlide[myIndex-1].style.display = 'block';
   window.location.href='#'+myIndex;
   myCountDown();
   myCounting = setInterval(myCountDown, 1000);
@@ -243,8 +269,6 @@ function myNext(){
   clearInterval(myLooper) ; 
   carousel();  
 }  
-  ;
-// document.getElementsByClassName('mySlides')[0].style.display = 'block';
- ; 
+;
 </script>  
 
