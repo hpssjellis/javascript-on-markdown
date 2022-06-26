@@ -4,7 +4,7 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.2.0-23
+##### version 0.2.0-25
 
 Demo of this Github Markdown can be viewed at this GitPages site
 
@@ -16,6 +16,9 @@ This Github Repository
 [https://github.com/hpssjellis/javascript-on-markdown](https://github.com/hpssjellis/javascript-on-markdown)
 
   <div id="myNumSlides"> ...</div>  <br>
+  <img class="mySlides" src="z01-slide.png"  style="width:1280px">
+  <img class="mySlides" src="z01-slide.png"  style="width:1280px">
+  <img class="mySlides" src="z01-slide.png"  style="width:1280px">
   <img class="mySlides" src="z01-slide.png"  style="width:1280px">
   
   
