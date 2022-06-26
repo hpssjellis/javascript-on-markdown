@@ -1,6 +1,6 @@
  
 
-##### version 1.0.1-70
+##### version 1.0.1-71
 
 Demo of this Github Markdown can be viewed at this GitPages site [https://hpssjellis.github.io/javascript-on-markdown/](https://hpssjellis.github.io/javascript-on-markdown/)
 
@@ -12,6 +12,99 @@ Number of Links: <input type="text" id="myCountLinks" size="7" value="15" >, Sec
 
 <div id="myNumSlides" style=" position:sticky; top:0px; left:20px; "> ...</div>  <br>
 
+
+
+<!-- Ignore all the below stuff   -->
+  
+<div id="myStick"  style=" position:sticky; top:-30px;  ">
+ 
+ <input type=button value="Start-No-Sound" onclick="{
+   xSlide  = document.getElementById('myCountLinks').value; 
+   myMainNum = document.getElementById('myCountMax').value;    
+   myAudio01.pause();
+   myAudio01.currentTime = 0;  
+   myIndex = 0;  
+   clearInterval(myLooper);  
+   myCountUp = -1;
+   carousel();  
+}">
+ 
+<input type=button value="Start-Pre-Recorded" onclick="{   
+   xSlide  = document.getElementById('myCountLinks').value; 
+   myMainNum = document.getElementById('myCountMax').value;  
+   myAudio01.pause();
+   myAudio01.currentTime = 0;                                                
+   myAudio01 = new Audio('recorded-talk.m4a');
+   myAudio01.play(); 
+   myIndex = 0;  
+   clearInterval(myLooper);  
+   carousel();                                                
+}">  
+ 
+  <input type=button value="Stop" onclick="{
+   myIndex = 0;  
+   clearInterval(myLooper);
+   clearInterval(myCounting);
+   if (myAudio01.paused && myAudio01.currentTime > 0 && !myAudio01.ended) {
+      } else {
+         myAudio01.pause();
+     }
+}">   
+
+ <input type=button value="-" onclick="{
+   clearInterval(myLooper);
+   clearInterval(myCounting);
+   myIndex -= 1;    
+   window.location.href='#'+myIndex;
+}">   
+  
+<input type=button value="+" onclick="{
+  clearInterval(myLooper);
+  clearInterval(myCounting);
+  myIndex += 1;  
+  window.location.href='#'+myIndex;
+}"> 
+  
+<input type=button value="Back" onclick="{
+   myIndex = myIndex - 2;    
+   if (myIndex <= 0){myIndex=0};                                      
+   myNext();
+}">   
+  
+<input type=button value="Next" onclick="{
+   myNext();
+}"> 
+  
+ <input id="myPause" type=button value="Pause" onclick="{ 
+   clearInterval(myLooper);
+   clearInterval(myCounting);
+   if (this.value == 'Pause'){                                                     
+       this.value = 'Play / Pause'; 
+       if (myAudio01.paused && myAudio01.currentTime > 0 && !myAudio01.ended) {
+      } else {
+         myAudio01.pause();
+     }
+   } else {    
+     myIndex -= 1; 
+     myCountUp += 1;
+     carousel();                                                 
+     this.value = 'Pause';  
+     if (myAudio01.paused && myAudio01.currentTime > 0 && !myAudio01.ended) {
+         myAudio01.play();
+      }                                                    
+   }
+}"> 
+  <input type=button value="TOP" onclick="{ 
+   window.location.href='#top'; 
+}">  
+  
+ </div>
+ 
+ 
+ <!-- Ignore all the above stuff   -->
+ 
+ 
+ 
 
 #### 1
 
@@ -130,91 +223,7 @@ At 20 seconds per page and 15 slides this would be the end of a 5 min presentati
 
 
 
-  
 
-<div id="myStick"  style=" position:sticky; top:-30px;  ">
- 
- <input type=button value="Start-No-Sound" onclick="{
-   xSlide  = document.getElementById('myCountLinks').value; 
-   myMainNum = document.getElementById('myCountMax').value;    
-   myAudio01.pause();
-   myAudio01.currentTime = 0;  
-   myIndex = 0;  
-   clearInterval(myLooper);  
-   myCountUp = -1;
-   carousel();  
-}">
- 
-<input type=button value="Start-Pre-Recorded" onclick="{   
-   xSlide  = document.getElementById('myCountLinks').value; 
-   myMainNum = document.getElementById('myCountMax').value;  
-   myAudio01.pause();
-   myAudio01.currentTime = 0;                                                
-   myAudio01 = new Audio('recorded-talk.m4a');
-   myAudio01.play(); 
-   myIndex = 0;  
-   clearInterval(myLooper);  
-   carousel();                                                
-}">  
- 
-  <input type=button value="Stop" onclick="{
-   myIndex = 0;  
-   clearInterval(myLooper);
-   clearInterval(myCounting);
-   if (myAudio01.paused && myAudio01.currentTime > 0 && !myAudio01.ended) {
-      } else {
-         myAudio01.pause();
-     }
-}">   
-
- <input type=button value="-" onclick="{
-   clearInterval(myLooper);
-   clearInterval(myCounting);
-   myIndex -= 1;    
-   window.location.href='#'+myIndex;
-}">   
-  
-<input type=button value="+" onclick="{
-  clearInterval(myLooper);
-  clearInterval(myCounting);
-  myIndex += 1;  
-  window.location.href='#'+myIndex;
-}"> 
-  
-<input type=button value="Back" onclick="{
-   myIndex = myIndex - 2;    
-   if (myIndex <= 0){myIndex=0};                                      
-   myNext();
-}">   
-  
-<input type=button value="Next" onclick="{
-   myNext();
-}"> 
-  
- <input id="myPause" type=button value="Pause" onclick="{ 
-   clearInterval(myLooper);
-   clearInterval(myCounting);
-   if (this.value == 'Pause'){                                                     
-       this.value = 'Play / Pause'; 
-       if (myAudio01.paused && myAudio01.currentTime > 0 && !myAudio01.ended) {
-      } else {
-         myAudio01.pause();
-     }
-   } else {    
-     myIndex -= 1; 
-     myCountUp += 1;
-     carousel();                                                 
-     this.value = 'Pause';  
-     if (myAudio01.paused && myAudio01.currentTime > 0 && !myAudio01.ended) {
-         myAudio01.play();
-      }                                                    
-   }
-}"> 
-  <input type=button value="TOP" onclick="{ 
-   window.location.href='#top'; 
-}">  
-  
- </div>
 
 
 
