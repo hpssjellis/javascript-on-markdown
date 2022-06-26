@@ -103,11 +103,6 @@ Number of Links: <input type="text" id="myCountLinks" size="7" value="15" >, Sec
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <hr>
 
-just some markdown
-
-[
-https://github.com/hpssjellis](https://github.com/hpssjellis)
-
 
 #### 2
 
@@ -115,6 +110,8 @@ https://github.com/hpssjellis](https://github.com/hpssjellis)
 Try the image with html
 
 <img src="https://user-images.githubusercontent.com/5605614/175780835-2b0d64a4-0ba8-4c90-9f05-fb4e89cd6980.png" width=700 />
+
+[https://github.com/hpssjellis](https://github.com/hpssjellis)
 <hr>
 
 
