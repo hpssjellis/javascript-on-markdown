@@ -78,7 +78,12 @@ Seconds per link: <input type="text" id="myCountMax" size="7" value="4" >
    } else {
      myIndex -= 1;  
      carousel();                                                 
-     this.value = 'Pause';     
+     this.value = 'Pause';  
+     if (myAudio01.paused && myAudio01.currentTime > 0 && !myAudio01.ended) {
+         myAudio01.play();
+      } else {
+         myAudio01.pause();
+     }                                                   
    }
 }">       
   
