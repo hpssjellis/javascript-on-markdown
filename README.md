@@ -1,6 +1,6 @@
  
 
-##### version 1.0.0-69
+##### version 1.0.1-70
 
 Demo of this Github Markdown can be viewed at this GitPages site [https://hpssjellis.github.io/javascript-on-markdown/](https://hpssjellis.github.io/javascript-on-markdown/)
 
