@@ -4,7 +4,7 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.2.1-26
+##### version 0.2.1-27
 
 Demo of this Github Markdown can be viewed at this GitPages site
 
@@ -21,7 +21,7 @@ This Github Repository
   <img class="mySlides" src="z01-slide.png"  style="width:1280px">
   <img class="mySlides" src="z01-slide.png"  style="width:1280px">
   
- <!-- 
+
 <script>
  let myIndex = 1;
  let myLooper = 0;
@@ -70,7 +70,6 @@ function myNext(){
  ; 
 </script>  
 
--->
 
 
 
