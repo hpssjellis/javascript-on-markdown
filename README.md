@@ -1,6 +1,6 @@
  
 
-##### version 1.0.0-68
+##### version 1.0.0-69
 
 Demo of this Github Markdown can be viewed at this GitPages site [https://hpssjellis.github.io/javascript-on-markdown/](https://hpssjellis.github.io/javascript-on-markdown/)
 
@@ -8,21 +8,13 @@ Demo of this Github Markdown can be viewed at this GitPages site [https://hpssje
 This Github Repository [https://github.com/hpssjellis/javascript-on-markdown](https://github.com/hpssjellis/javascript-on-markdown)
 
 
-Number of Links: <input type="text" id="myCountLinks" size="7" value="15" >, Seconds per link: <input type="text" id="myCountMax" size="7" value="2" >
+Number of Links: <input type="text" id="myCountLinks" size="7" value="15" >, Seconds per link: <input type="text" id="myCountMax" size="7" value="20" >
 
 <div id="myNumSlides" style=" position:sticky; top:0px; left:20px; "> ...</div>  <br>
 
   
 
-
-
-
-
-
-
-
-
-<div id="myStick"  style=" position:sticky; top:20px;  ">
+<div id="myStick"  style=" position:sticky; top:-20px;  ">
  
  <input type=button value="Start-No-Sound" onclick="{
    xSlide  = document.getElementById('myCountLinks').value; 
