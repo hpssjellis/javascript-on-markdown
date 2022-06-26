@@ -4,7 +4,7 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.1.1-21
+##### version 0.2.0-22
 
 Demo of this Github Markdown can be viewed at this GitPages site
 
@@ -15,9 +15,73 @@ This Github Repository
 
 [https://github.com/hpssjellis/javascript-on-markdown](https://github.com/hpssjellis/javascript-on-markdown)
 
+  <div id="myNumSlides"> ...</div>  <br>
+
+<script>
+ let myIndex = 1;
+ let myLooper = 0;
+ let myCounting = 0;
+ let myMainNum = 20;   
+ let myCountUp = 0;
+ let xSlide = document.getElementsByClassName("mySlides"); 
+;
+function carousel() {
+  clearInterval(myCounting);
+  myCountUp = -1;
+  var i;
+;
+  for (i = 0; i < xSlide.length; i++) {
+    xSlide[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > xSlide.length) {myIndex = xSlide.length};    
+  xSlide[myIndex-1].style.display = 'block';  
+  myCountDown();
+  myCounting = setInterval(myCountDown, 1000);
+  myLooper = setTimeout(carousel, myMainNum*1000); 
+}
+  
+function myCountDown(){
+  myCountUp++;
+  if (myCountUp >= myMainNum ) {
+    myCountUp = myMainNum;                              
+  }
+  if (myIndex >= xSlide.length && myMainNum == myCountUp){ 
+     document.getElementById("myNumSlides").innerHTML = ` Slide ${myIndex} of ${xSlide.length} slides. ALL DONE`;
+     clearInterval(myCounting);             
+     clearInterval(myLooper);  
+  }
+  else {    
+     document.getElementById("myNumSlides").innerHTML = ` Slide ${myIndex} of ${xSlide.length} slides. ${myMainNum-myCountUp} seconds remaining`;
+  }
+}
+;
+function myNext(){                         
+  clearInterval(myLooper) ; 
+  carousel();  
+}  
+  ;
+ document.getElementsByClassName('mySlides')[0].style.display = 'block';
+ ; 
+</script>  
 
 
-# Note when looking at the markdown non of the javascript buttons appear, you must go to the gitPages demo link!
+
+
+
+
+
+
+# Note when looking at the markdown none of the javascript buttons appear, you must go to the gitPages demo link!
+
+
+ <input type=button value="Start-No-Sound" onclick="{
+   myIndex = 0;  
+   clearInterval(myLooper);  
+   carousel();  
+}">
+
+
 
 
 
