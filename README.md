@@ -15,13 +15,14 @@ This Github Repository
 
 [https://github.com/hpssjellis/javascript-on-markdown](https://github.com/hpssjellis/javascript-on-markdown)
 
+
+Number of Links: <input type="text" id="myCountLinks" size="7" value="4" >
+
+Seconds per link: <input type="text" id="myCountMax" size="7" value="15" >
+
   <div id="myNumSlides"> ...</div>  <br>
-  <img class="mySlides" src="z01-slide.png"  style="width:1280px">
-  <img class="mySlides" src="z01-slide.png"  style="width:1280px">
-  <img class="mySlides" src="z01-slide.png"  style="width:1280px">
-  <img class="mySlides" src="z01-slide.png"  style="width:1280px">
+
   
-<input type="text" id="myCountMax" value="15" >
 
 <script>
  let myIndex = 1;
@@ -29,7 +30,7 @@ This Github Repository
  let myCounting = 0;
  let myMainNum = 20;   
  let myCountUp = 0;
- let xSlide = document.getElementsByClassName('mySlides'); 
+ let xSlide = document.getElementsByClassName('myCountLinks'); 
 ;
 function carousel() {
   clearInterval(myCounting);
@@ -41,7 +42,8 @@ function carousel() {
   }
   myIndex++;
   if (myIndex > xSlide.length) {myIndex = xSlide.length};    
-  xSlide[myIndex-1].style.display = 'block';  
+  xSlide[myIndex-1].style.display = 'block';
+  window.location.href='#'+myIndex;
   myCountDown();
   myCounting = setInterval(myCountDown, 1000);
   myLooper = setTimeout(carousel, myMainNum*1000); 
@@ -67,7 +69,7 @@ function myNext(){
   carousel();  
 }  
   ;
- document.getElementsByClassName('mySlides')[0].style.display = 'block';
+// document.getElementsByClassName('mySlides')[0].style.display = 'block';
  ; 
 </script>  
 
@@ -87,10 +89,10 @@ function myNext(){
    carousel();  
 }">
 
-
-
-
-
+#### 0
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+#### 1
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 just some markdown
 
@@ -98,8 +100,8 @@ just some markdown
 https://github.com/hpssjellis](https://github.com/hpssjellis)
 
 
-### 2
-
+#### 2
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <input type="button" value="Go to 5" onclick="{
   alert('wow'); 
@@ -118,13 +120,18 @@ more markdown this time of an image
 
 ![image](https://user-images.githubusercontent.com/5605614/175780835-2b0d64a4-0ba8-4c90-9f05-fb4e89cd6980.png)
 
+ 
+ 
+ 
+#### 3
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br>
 Try the image with html
 
 <img src="https://user-images.githubusercontent.com/5605614/175780835-2b0d64a4-0ba8-4c90-9f05-fb4e89cd6980.png" width=700 />
 
 
-### 4
+#### 4
 
 
 .
@@ -166,7 +173,7 @@ Try the image with html
 
 
 
-### 5
+#### 5
 
 
 <input type="button" value="go to 2" onclick="{
@@ -204,7 +211,7 @@ Try the image with html
 
 .
 
-###  6
+####  6
 
 <input type="button" value="go to 4" onclick="{ window.location.href='#4';   }">
 
