@@ -4,7 +4,7 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.3.2-40
+##### version 0.3.3-41
 
 Demo of this Github Markdown can be viewed at this GitPages site
 
@@ -32,9 +32,9 @@ Seconds per link: <input type="text" id="myCountMax" size="7" value="4" >
 
 # Note when looking at the markdown none of the javascript buttons appear, you must go to the gitPages demo link!
 
-<div id="myStick"  style=" position:sticky; top:20px; left:100px; ">
+<div id="myStick"  style=" position:sticky; top:20px;  ">
  
- <input type=button value="Start-No-Sound" style=" position:sticky; top:0px; left:30px; " onclick="{
+ <input type=button value="Start-No-Sound" style=" position:sticky; top:0px;  " onclick="{
    xSlide  = document.getElementById('myCountLinks').value; 
    myMainNum = document.getElementById('myCountMax').value;                                               
    myIndex = 0;  
@@ -230,12 +230,12 @@ function myCountDown(){
     myCountUp = myMainNum;                              
   }
   if (myIndex >= xSlide && myMainNum == myCountUp){ 
-     document.getElementById("myNumSlides").innerHTML = ` Slide ${myIndex} of ${xSlide} slides. ALL DONE`;
+     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ALL DONE`;
      clearInterval(myCounting);             
      clearInterval(myLooper);  
   }
   else {    
-     document.getElementById("myNumSlides").innerHTML = ` Slide ${myIndex} of ${xSlide} slides. ${myMainNum-myCountUp} seconds remaining`;
+     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ${myMainNum-myCountUp} seconds remaining`;
   }
 }
 ;
