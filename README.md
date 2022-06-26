@@ -4,7 +4,7 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.3.1-39
+##### version 0.3.2-40
 
 Demo of this Github Markdown can be viewed at this GitPages site
 
@@ -32,7 +32,7 @@ Seconds per link: <input type="text" id="myCountMax" size="7" value="4" >
 
 # Note when looking at the markdown none of the javascript buttons appear, you must go to the gitPages demo link!
 
-<div id="myStick"  style=" position:sticky; top:0px; left:50px; ">
+<div id="myStick"  style=" position:sticky; top:20px; left:100px; ">
  
  <input type=button value="Start-No-Sound" style=" position:sticky; top:0px; left:30px; " onclick="{
    xSlide  = document.getElementById('myCountLinks').value; 
