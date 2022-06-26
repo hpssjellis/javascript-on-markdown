@@ -24,9 +24,10 @@ Number of Links: <input type="text" id="myCountLinks" size="7" value="7" >, Seco
 
 
 
-<div id="myStick"  style=" position:sticky; top:20px;  ">
+<div id="myStick"  style=" position:sticky; top:20px; display:inline; ">
  
  <input type=button value="Start-No-Sound" onclick="{
+   document.getElementById('myStick').style.display = 'none';                                                 
    xSlide  = document.getElementById('myCountLinks').value; 
    myMainNum = document.getElementById('myCountMax').value;    
    myAudio01.pause();
@@ -82,6 +83,8 @@ Number of Links: <input type="text" id="myCountLinks" size="7" value="7" >, Seco
 <input type=button value="Next" onclick="{
    myNext();
 }"> 
+ 
+    
   
  <input id="myPause" type=button value="Pause" onclick="{ 
    clearInterval(myLooper);
@@ -266,12 +269,12 @@ function myCountDown(){
     myCountUp = myMainNum;                              
   }
   if (myIndex >= xSlide && myMainNum == myCountUp){ 
-     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ALL DONE`;
+     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ALL DONE <input type=button value="Show" onclick="{document.getElementById('myStick').style.display = 'inline'; }"> `;
      clearInterval(myCounting);             
      clearInterval(myLooper);  
   }
   else {    
-     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ${myMainNum-myCountUp} seconds remaining`;
+     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ${myMainNum-myCountUp} seconds remaining <input type=button value="Show" onclick="{document.getElementById('myStick').style.display = 'inline'; }"> `;
   }
 }
 ;
