@@ -2,7 +2,7 @@
 
 
 
-##### version 0.6.0-74
+##### version 0.6.0-75
 
 Demo of this Github Markdown can be viewed at this GitPages site [https://hpssjellis.github.io/javascript-on-markdown/](https://hpssjellis.github.io/javascript-on-markdown/)
 
@@ -38,7 +38,8 @@ Number of Links: <input type="text" id="myCountLinks" size="7" value="7" >, Seco
    carousel();  
 }">
  
-<input type=button value="Start-Pre-Recorded" onclick="{   
+<input type=button value="Start-Pre-Recorded" onclick="{                                                        
+   document.getElementById('myStick').style.display = 'none';   
    xSlide  = document.getElementById('myCountLinks').value; 
    myMainNum = document.getElementById('myCountMax').value;  
    myAudio01.pause();
@@ -269,12 +270,12 @@ function myCountDown(){
     myCountUp = myMainNum;                              
   }
   if (myIndex >= xSlide && myMainNum == myCountUp){ 
-     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ALL DONE <input type=button value="Show" onclick="{document.getElementById('myStick').style.display = 'inline'; }"> `;
+     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ALL DONE <input type=button value="Show" onclick="{document.getElementById('myStick').style.display = 'inline'; height:15px; }"> `;
      clearInterval(myCounting);             
      clearInterval(myLooper);  
   }
   else {    
-     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ${myMainNum-myCountUp} seconds remaining <input type=button value="Show" onclick="{document.getElementById('myStick').style.display = 'inline'; }"> `;
+     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ${myMainNum-myCountUp} seconds remaining <input type=button value="Show" onclick="{document.getElementById('myStick').style.display = 'inline'; height:15px; }"> `;
   }
 }
 ;
