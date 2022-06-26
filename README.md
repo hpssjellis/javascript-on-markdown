@@ -1,10 +1,10 @@
  
-
+# 0
 
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.4.2-62
+##### version 0.4.2-63
 
 Demo of this Github Markdown can be viewed at this GitPages site
 
@@ -257,7 +257,7 @@ Try the image with html
 
 
 
-
+<a href="#0">TOP</a>
 
 ### By Jeremy Ellis Twitter @Rocksetta Use at your own Risk!
 ### Note when looking at the markdown none of the javascript buttons appear, you must go to your Gitpages Demo Link!
