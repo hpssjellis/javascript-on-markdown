@@ -4,7 +4,7 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.2.0-22
+##### version 0.2.0-23
 
 Demo of this Github Markdown can be viewed at this GitPages site
 
@@ -16,14 +16,16 @@ This Github Repository
 [https://github.com/hpssjellis/javascript-on-markdown](https://github.com/hpssjellis/javascript-on-markdown)
 
   <div id="myNumSlides"> ...</div>  <br>
-
+  <img class="mySlides" src="z01-slide.png"  style="width:1280px">
+  
+  
 <script>
  let myIndex = 1;
  let myLooper = 0;
  let myCounting = 0;
  let myMainNum = 20;   
  let myCountUp = 0;
- let xSlide = document.getElementsByClassName("mySlides"); 
+ let xSlide = document.getElementsByClassName('mySlides'); 
 ;
 function carousel() {
   clearInterval(myCounting);
@@ -31,7 +33,7 @@ function carousel() {
   var i;
 ;
   for (i = 0; i < xSlide.length; i++) {
-    xSlide[i].style.display = "none";  
+    xSlide[i].style.display = 'none';  
   }
   myIndex++;
   if (myIndex > xSlide.length) {myIndex = xSlide.length};    
