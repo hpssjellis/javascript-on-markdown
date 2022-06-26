@@ -259,6 +259,7 @@ A few Javascript abilites do not work, such as hiding the code. So all the Javas
 ;
 function carousel() {
   clearInterval(myCounting);
+  myCountUp = -1;
   var i;
 ;
   myIndex++;
