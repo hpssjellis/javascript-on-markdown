@@ -1,24 +1,14 @@
  
-# 0
 
-# javascript-on-markdown
-testing if I can do some javascript with markdown on github
+##### version 0.5.1-65
 
-##### version 0.5.0-64
-
-Demo of this Github Markdown can be viewed at this GitPages site
-
-[https://hpssjellis.github.io/javascript-on-markdown/](https://hpssjellis.github.io/javascript-on-markdown/)
+Demo of this Github Markdown can be viewed at this GitPages site [https://hpssjellis.github.io/javascript-on-markdown/](https://hpssjellis.github.io/javascript-on-markdown/)
 
 
-This Github Repository
-
-[https://github.com/hpssjellis/javascript-on-markdown](https://github.com/hpssjellis/javascript-on-markdown)
+This Github Repository [https://github.com/hpssjellis/javascript-on-markdown](https://github.com/hpssjellis/javascript-on-markdown)
 
 
-Number of Links: <input type="text" id="myCountLinks" size="7" value="7" >
-
-Seconds per link: <input type="text" id="myCountMax" size="7" value="4" >
+Number of Links: <input type="text" id="myCountLinks" size="7" value="7" >, Seconds per link: <input type="text" id="myCountMax" size="7" value="4" >
 
 <div id="myNumSlides" style=" position:sticky; top:0px; left:20px; "> ...</div>  <br>
 
@@ -109,7 +99,10 @@ Seconds per link: <input type="text" id="myCountMax" size="7" value="4" >
          myAudio01.play();
       }                                                    
    }
-}">       
+}"> 
+  <input type=button value="TOP" onclick="{ 
+   window.location.href='#top'; 
+}">  
   
  </div>
 
@@ -261,7 +254,7 @@ Try the image with html
 
 
 
-<a href="#0">TOP</a>
+<a href="#top">Top of page</a>
 
 ### By Jeremy Ellis Twitter @Rocksetta Use at your own Risk!
 ### Note when looking at the markdown none of the javascript buttons appear, you must go to your Gitpages Demo Link!
