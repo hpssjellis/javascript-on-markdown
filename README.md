@@ -4,7 +4,7 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.4.1-51
+##### version 0.4.1-52
 
 Demo of this Github Markdown can be viewed at this GitPages site
 
@@ -241,10 +241,10 @@ Try the image with html
 
 
 ### By Jeremy Ellis Twitter @Rocksetta Use at your own Risk!
-# Note when looking at the markdown none of the javascript buttons appear, you must go to your Gitpages Demo Link!
+### Note when looking at the markdown none of the javascript buttons appear, you must go to your Gitpages Demo Link!
+A few Javascript abilites do not work, such as hiding the code. So all the Javascript not in buttons is below. 
 
 
-<!--
 
 <script>
  let myIndex = 1;
@@ -291,4 +291,4 @@ function myNext(){
 ;
 </script>  
 
--->
+
