@@ -2,7 +2,7 @@
 
 
 
-##### version 0.6.2-79
+##### version 0.6.2-80
 
 Demo of this Github Markdown can be viewed at this GitPages site [https://hpssjellis.github.io/javascript-on-markdown/](https://hpssjellis.github.io/javascript-on-markdown/)
 
@@ -12,7 +12,7 @@ This Github Repository [https://github.com/hpssjellis/javascript-on-markdown](ht
 
 Number of Links: <input type="text" id="myCountLinks" size="7" value="7" >, Seconds per link: <input type="text" id="myCountMax" size="7" value="4" >
 
-<div id="myNumSlides" style=" position:sticky; top:0px; left:20px; "> ...</div>  <br>
+<div id="myNumSlides" style=" position:sticky; top:0px; left:20px; height:20px; "> ...</div>  <br>
 
   
 
