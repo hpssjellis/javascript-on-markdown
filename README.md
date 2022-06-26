@@ -4,7 +4,7 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.4.1-52
+##### version 0.4.1-53
 
 Demo of this Github Markdown can be viewed at this GitPages site
 
@@ -79,7 +79,7 @@ Seconds per link: <input type="text" id="myCountMax" size="7" value="4" >
      }
    } else {    
      myIndex -= 1; 
-     myCounting += 1;  // not sure why
+     myCountUp++;
      carousel();                                                 
      this.value = 'Pause';  
      if (myAudio01.paused && myAudio01.currentTime > 0 && !myAudio01.ended) {
