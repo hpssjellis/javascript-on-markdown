@@ -4,7 +4,7 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.4.0-48
+##### version 0.4.1-49
 
 Demo of this Github Markdown can be viewed at this GitPages site
 
