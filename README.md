@@ -2,7 +2,7 @@
 
 
 
-##### version 0.6.2-78
+##### version 0.6.2-79
 
 Demo of this Github Markdown can be viewed at this GitPages site [https://hpssjellis.github.io/javascript-on-markdown/](https://hpssjellis.github.io/javascript-on-markdown/)
 
@@ -24,7 +24,7 @@ Number of Links: <input type="text" id="myCountLinks" size="7" value="7" >, Seco
 
 
 
-<div id="myStick"  style=" position:sticky; top:20px; display:inline; ">
+<div id="myStick"  style=" position:sticky; top:25px; display:inline; ">
  
  <input type=button value="Start-No-Sound" onclick="{
    document.getElementById('myStick').style.display = 'none';                                                 
