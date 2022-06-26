@@ -1,6 +1,6 @@
  
 
-##### version 0.5.1-65
+##### version 1.0.0-67
 
 Demo of this Github Markdown can be viewed at this GitPages site [https://hpssjellis.github.io/javascript-on-markdown/](https://hpssjellis.github.io/javascript-on-markdown/)
 
@@ -107,7 +107,9 @@ Number of Links: <input type="text" id="myCountLinks" size="7" value="7" >, Seco
  </div>
 
 #### 1
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
 just some markdown
 
@@ -116,138 +118,104 @@ https://github.com/hpssjellis](https://github.com/hpssjellis)
 
 
 #### 2
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-<input type="button" value="Go to 5" onclick="{
-  alert('wow'); 
-  window.location.href='#5';                                                   
-;
-  /*   ignore this line only */ ;  
-;           
-  alert(); 
-}">
 
 
-
-
-
-more markdown this time of an image
-
-![image](https://user-images.githubusercontent.com/5605614/175780835-2b0d64a4-0ba8-4c90-9f05-fb4e89cd6980.png)
-
- 
- 
- 
-#### 3
- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br>
 Try the image with html
 
 <img src="https://user-images.githubusercontent.com/5605614/175780835-2b0d64a4-0ba8-4c90-9f05-fb4e89cd6980.png" width=700 />
+<hr>
 
+
+#### 3
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
 #### 4
 
-
-.
-
-
-
-.
-
-
-
-.
-
-
-
-
-
-.
-
-
-
-
-.
-
-
-
-
-
-.
-
-
-
-
-
-
-
-.
-
-
-
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
 #### 5
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
-<input type="button" value="go to 2" onclick="{
-   window.location.href='#2';
-}">
+#### 6
 
-.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
+#### 7
 
-.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
+#### 8
 
-.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
+#### 9
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
-.
+#### 10
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
-.
+#### 11
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
-.
+#### 12
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
+#### 13
 
-.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
+#### 14
 
-.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
+#### 15
 
-.
+At 20 seconds per page and 15 slides this would be the end of a 5 min presentation
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
+#### 16
 
-.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
-####  6
+#### 17
 
-<input type="button" value="go to 4" onclick="{ window.location.href='#4';   }">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
+#### 18
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
+#### 19
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
+#### 20
 
-
-
-
-
-
-
-
-
-
-
-
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
 
 
 
