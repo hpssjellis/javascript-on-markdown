@@ -2,7 +2,7 @@
 
 
 
-##### version 0.6.0-75
+##### version 0.6.1-76
 
 Demo of this Github Markdown can be viewed at this GitPages site [https://hpssjellis.github.io/javascript-on-markdown/](https://hpssjellis.github.io/javascript-on-markdown/)
 
@@ -270,12 +270,12 @@ function myCountDown(){
     myCountUp = myMainNum;                              
   }
   if (myIndex >= xSlide && myMainNum == myCountUp){ 
-     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ALL DONE <input type=button value="Show" onclick="{document.getElementById('myStick').style.display = 'inline'; height:15px; }"> `;
+     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ALL DONE <input type=button value="Show"  style="height:10px; " onclick="{document.getElementById('myStick').style.display = 'inline'; }"> `;
      clearInterval(myCounting);             
      clearInterval(myLooper);  
   }
   else {    
-     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ${myMainNum-myCountUp} seconds remaining <input type=button value="Show" onclick="{document.getElementById('myStick').style.display = 'inline'; height:15px; }"> `;
+     document.getElementById("myNumSlides").innerHTML = `&nbsp;&nbsp;&nbsp; Slide ${myIndex} of ${xSlide} slides. ${myMainNum-myCountUp} seconds remaining <input type=button value="Show" style="height:10px; " onclick="{document.getElementById('myStick').style.display = 'inline'; }"> `;
   }
 }
 ;
