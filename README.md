@@ -4,7 +4,7 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.3.4-46
+##### version 0.3.4-47
 
 Demo of this Github Markdown can be viewed at this GitPages site
 
@@ -59,17 +59,7 @@ Seconds per link: <input type="text" id="myCountMax" size="7" value="4" >
    myIndex = 0;  
    clearInterval(myLooper);  
 }">   
- 
- <input id="myPause" type=button value="Pause" onclick="{ 
-   clearInterval(myLooper);  
-   if (this.value == 'Pause'){                                                     
-       this.value = 'Re-Start';                                                 
-   } else {
-     carousel();                                                 
-     this.value = 'Pause';     
-   }
-}">       
-  
+
   
 <input type=button value="Back" onclick="{
    myIndex = myIndex - 2;    
@@ -80,7 +70,18 @@ Seconds per link: <input type="text" id="myCountMax" size="7" value="4" >
 <input type=button value="Next" onclick="{
    myNext();
 }"> 
- 
+  
+ <input id="myPause" type=button value="Pause" onclick="{ 
+   clearInterval(myLooper);  
+   if (this.value == 'Pause'){                                                     
+       this.value = 'Re-Start';                                                 
+   } else {
+     myIndex -= 1;  
+     carousel();                                                 
+     this.value = 'Pause';     
+   }
+}">       
+  
  </div>
 
 #### 1
