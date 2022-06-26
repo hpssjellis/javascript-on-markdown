@@ -4,7 +4,7 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.2.2-32
+##### version 0.2.2-33
 
 Demo of this Github Markdown can be viewed at this GitPages site
 
@@ -20,7 +20,7 @@ Number of Links: <input type="text" id="myCountLinks" size="7" value="4" >
 
 Seconds per link: <input type="text" id="myCountMax" size="7" value="15" >
 
-  <div id="myNumSlides"> ...</div>  <br>
+  <div id="myNumSlides" style=" position:sticky; top:0px; "> ...</div>  <br>
 
   
 
@@ -37,11 +37,11 @@ function carousel() {
   myCountUp = -1;
   var i;
 ;
-  for (i = 0; i < xSlide.length; i++) {
+  for (i = 0; i < xSlide; i++) {
    // xSlide[i].style.display = 'none';  
   }
   myIndex++;
-  if (myIndex > xSlide.length) {myIndex = xSlide.length};    
+  if (myIndex > xSlide) {myIndex = xSlide};    
  // xSlide[myIndex-1].style.display = 'block';
   window.location.href='#'+myIndex;
   myCountDown();
@@ -54,13 +54,13 @@ function myCountDown(){
   if (myCountUp >= myMainNum ) {
     myCountUp = myMainNum;                              
   }
-  if (myIndex >= xSlide.length && myMainNum == myCountUp){ 
-     document.getElementById("myNumSlides").innerHTML = ` Slide ${myIndex} of ${xSlide.length} slides. ALL DONE`;
+  if (myIndex >= xSlide && myMainNum == myCountUp){ 
+     document.getElementById("myNumSlides").innerHTML = ` Slide ${myIndex} of ${xSlide} slides. ALL DONE`;
      clearInterval(myCounting);             
      clearInterval(myLooper);  
   }
   else {    
-     document.getElementById("myNumSlides").innerHTML = ` Slide ${myIndex} of ${xSlide.length} slides. ${myMainNum-myCountUp} seconds remaining`;
+     document.getElementById("myNumSlides").innerHTML = ` Slide ${myIndex} of ${xSlide} slides. ${myMainNum-myCountUp} seconds remaining`;
   }
 }
 ;
@@ -83,7 +83,7 @@ function myNext(){
 
 
  <input type=button value="Start-No-Sound" onclick="{
-   xSlide = document.getElementsByClassName('myCountLinks'); 
+   xSlide = document.getElementsById('myCountLinks'); 
    myMainNum =  document.getElementById('myCountMax').value;                                               
    myIndex = 0;  
    clearInterval(myLooper);  
