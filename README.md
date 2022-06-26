@@ -4,7 +4,7 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.2.2-28
+##### version 0.2.2-29
 
 Demo of this Github Markdown can be viewed at this GitPages site
 
@@ -21,7 +21,7 @@ This Github Repository
   <img class="mySlides" src="z01-slide.png"  style="width:1280px">
   <img class="mySlides" src="z01-slide.png"  style="width:1280px">
   
-<input type=number id="myCount" value="15" >
+<input type="text" id="myCountMax" value="15" >
 
 <script>
  let myIndex = 1;
@@ -81,7 +81,7 @@ function myNext(){
 
 
  <input type=button value="Start-No-Sound" onclick="{
-   myMainNum =   document.getElementById('myCount').value                                               
+   myMainNum =  document.getElementById('myCountMax').value;                                               
    myIndex = 0;  
    clearInterval(myLooper);  
    carousel();  
