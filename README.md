@@ -4,7 +4,7 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.4.2-59
+##### version 0.4.2-60
 
 Demo of this Github Markdown can be viewed at this GitPages site
 
@@ -46,6 +46,8 @@ Seconds per link: <input type="text" id="myCountMax" size="7" value="4" >
 <input type=button value="Start-Pre-Recorded" onclick="{   
    xSlide  = document.getElementById('myCountLinks').value; 
    myMainNum = document.getElementById('myCountMax').value;  
+   myAudio01.pause();
+   myAudio01.currentTime = 0;                                                
    myAudio01 = new Audio('recorded-talk.m4a');
    myAudio01.play(); 
    myIndex = 0;  
