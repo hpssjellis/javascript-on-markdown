@@ -4,7 +4,7 @@
 # javascript-on-markdown
 testing if I can do some javascript with markdown on github
 
-##### version 0.4.1-50
+##### version 0.4.1-51
 
 Demo of this Github Markdown can be viewed at this GitPages site
 
@@ -28,9 +28,6 @@ Seconds per link: <input type="text" id="myCountMax" size="7" value="4" >
 
 
 
-
-
-# Note when looking at the markdown none of the javascript buttons appear, you must go to the gitPages demo link!
 
 
 
@@ -243,9 +240,11 @@ Try the image with html
 
 
 
+### By Jeremy Ellis Twitter @Rocksetta Use at your own Risk!
+# Note when looking at the markdown none of the javascript buttons appear, you must go to your Gitpages Demo Link!
 
 
-
+<!--
 
 <script>
  let myIndex = 1;
@@ -292,3 +291,4 @@ function myNext(){
 ;
 </script>  
 
+-->
