@@ -4,6 +4,8 @@
 
 ##### version 0.6.3-82
 
+Fork this repo, fill in your markdown and <html> for the 15 lides (max 20 Slides), record your presentation and save it as recorded-talk.m4a. (or change the code to reflect the new name.). Setup gitPages --> settings-->pages-->none to master-->save--> copy the link and replace below.
+
 Demo of this Github Markdown can be viewed at this GitPages site (replace this link with your Gitpages link) [https://hpssjellis.github.io/javascript-on-markdown/](https://hpssjellis.github.io/javascript-on-markdown/)
 
 
