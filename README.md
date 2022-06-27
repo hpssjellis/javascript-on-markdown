@@ -2,7 +2,7 @@
 
 
 
-##### version 0.6.3-84
+##### version 0.6.4-85
 
 Fork this repo, fill in your markdown and <html> for the 15 slides (max 20 slides), record your presentation and save it as ```recorded-talk.m4a``` (or change the code to reflect the new name.)
  
@@ -14,7 +14,7 @@ Demo of this Github Markdown can be viewed at this GitPages site (replace this l
 This Github Repository (replace this link with your Repository Link) [https://github.com/hpssjellis/javascript-on-markdown](https://github.com/hpssjellis/javascript-on-markdown)
 
 
-Number of Slides: <input type="text" id="myCountLinks" size="7" value="7" >, Seconds per Slide: <input type="text" id="myCountMax" size="7" value="20" >
+Number of Slides: <input type="text" id="myCountLinks" size="6" value="15" >, Seconds per Slide: <input type="text" id="myCountMax" size="6" value="20" >
 
 <div id="myNumSlides" style=" position:sticky; top:0px; left:20px; height:25px; "> ...</div>  <br>
 
