@@ -2,7 +2,7 @@
 
 
 
-##### version 0.6.3-82
+##### version 0.6.3-83
 
 Fork this repo, fill in your markdown and <html> for the 15 lides (max 20 Slides), record your presentation and save it as recorded-talk.m4a. (or change the code to reflect the new name.). Setup gitPages --> settings-->pages-->none to master-->save--> copy the link and replace below.
 
@@ -107,6 +107,10 @@ Number of Slides: <input type="text" id="myCountLinks" size="7" value="7" >, Sec
          myAudio01.play();
       }                                                    
    }
+}"> 
+ 
+<input type=button value="Hide" onclick="{
+   document.getElementById('myStick').style.display = 'none';
 }"> 
   <input type=button value="TOP" onclick="{ 
    window.location.href='#top'; 
